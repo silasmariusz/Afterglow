@@ -112,6 +112,7 @@
       <Private>True</Private>
       <HintPath>..\packages\ServiceStack.Razor.3.9.33\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -133,6 +134,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+    <None Include="Resources\Icon\LED_dark.psd" />
+    <None Include="Resources\Icon\LED_light.psd" />
+    <None Include="Resources\Icon\LED_light2.psd" />
     <None Include="Scripts\jquery-2.0.0.min.map">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -183,6 +187,25 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Controllers\ProfilesController.js" />
+    <Content Include="Resources\Icon\%24this.Icon.ico" />
+    <None Include="Resources\Icon\LED_dark-128.png" />
+    <EmbeddedResource Include="Resources\Icon\LED_dark-16.ico" />
+    <None Include="Resources\Icon\LED_dark-16.png" />
+    <None Include="Resources\Icon\LED_dark-24.png" />
+    <None Include="Resources\Icon\LED_dark-256.png" />
+    <None Include="Resources\Icon\LED_dark-32.png" />
+    <None Include="Resources\Icon\LED_dark-48.png" />
+    <None Include="Resources\Icon\LED_dark-96.png" />
+    <EmbeddedResource Include="Resources\Icon\LED_dark.ico" />
+    <None Include="Resources\Icon\LED_light-128.png" />
+    <EmbeddedResource Include="Resources\Icon\LED_light-16.ico" />
+    <None Include="Resources\Icon\LED_light-16.png" />
+    <None Include="Resources\Icon\LED_light-256.png" />
+    <None Include="Resources\Icon\LED_light-32.png" />
+    <None Include="Resources\Icon\LED_light-48.png" />
+    <None Include="Resources\Icon\LED_light-64.png" />
+    <None Include="Resources\Icon\LED_light-96.png" />
+    <EmbeddedResource Include="Resources\Icon\LED_light.ico" />
     <Content Include="Scripts\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.min.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
