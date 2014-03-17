@@ -23,6 +23,10 @@
       <BlackSegmentHeight>1</BlackSegmentHeight>
       <DarknessThreshold>5</DarknessThreshold>
     </CopyScreenCapture>
+	<Direct3DCapture>
+	  <Id>3</Id>
+	  <Target>mpc-hc</Target>
+	</Direct3DCapture>
   </ConfiguredCapturePlugins>
   <ConfiguredColourExtractionPlugins>
     <AverageColourExtraction>
@@ -615,16 +619,10 @@
         </BasicLightSetup>
       </LightSetupPlugins>
       <CapturePlugins>
-        <CopyScreenCapture>
-          <Id>1</Id>
-          <Screen>Screen 1</Screen>
-          <CaptureCorrection>3</CaptureCorrection>
-          <CaptureCorrectionIntervalType>Seconds</CaptureCorrectionIntervalType>
-          <CaptureCorrectionInterval>1</CaptureCorrectionInterval>
-          <PixelSkip>20</PixelSkip>
-          <BlackSegmentHeight>1</BlackSegmentHeight>
-          <DarknessThreshold>5</DarknessThreshold>
-        </CopyScreenCapture>
+        <Direct3DCapture>
+          <Id>3</Id>
+          <Target>mpc-hc</Target>
+        </Direct3DCapture>
       </CapturePlugins>
       <ColourExtractionPlugins>
         <AverageColourExtraction>

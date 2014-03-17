@@ -31,10 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Afterglow.DirectX, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1e778b75dfdbd36f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Afterglow.DirectX\bin\Afterglow.DirectX.dll</HintPath>
-    </Reference>
     <Reference Include="EasyHook">
       <HintPath>..\Afterglow.DirectX\EasyHookBin\EasyHook.dll</HintPath>
     </Reference>
@@ -58,6 +54,10 @@
     <ProjectReference Include="..\Afterglow.Core\Afterglow.Core.csproj">
       <Project>{79105162-F542-4FE4-96AA-F15AF989C540}</Project>
       <Name>Afterglow.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Afterglow.DirectX\Afterglow.DirectX.csproj">
+      <Project>{703fe443-b4d3-41d1-b227-cf1cff1ca5d4}</Project>
+      <Name>Afterglow.DirectX</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

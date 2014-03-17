@@ -132,7 +132,9 @@ namespace Afterglow.Web
             //_runtime.Setup.ConfiguredLightSetupPlugins.Add(.FirstOrDefault().OLDPostProcessPlugins.FirstOrDefault());
             //_runtime.Save();
 
+#if ! DEBUG 
             ShowWindow(ThisConsole, 0);
+#endif
         }
 
 
