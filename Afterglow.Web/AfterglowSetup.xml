@@ -509,8 +509,52 @@
         </Light>
       </Lights>
     </BasicLightSetup>
+    <BasicLightSetup>
+      <Id>3</Id>
+      <DisplayName>MoMoLight LTR Wide</DisplayName>
+      <NumberOfLightsHigh>10</NumberOfLightsHigh>
+      <NumberOfLightsWide>18</NumberOfLightsWide>
+      <Lights>
+        <Light>
+          <Id>1</Id>
+          <Index>0</Index>
+          <Left>0</Left>
+          <Top>2</Top>
+          <Width>1</Width>
+          <Height>7</Height>
+          <ScreenNumber>0</ScreenNumber>
+        </Light>
+        <Light>
+          <Id>2</Id>
+          <Index>1</Index>
+          <Left>0</Left>
+          <Top>0</Top>
+          <Width>17</Width>
+          <Height>1</Height>
+          <ScreenNumber>0</ScreenNumber>
+        </Light>
+        <Light>
+          <Id>3</Id>
+          <Index>2</Index>
+          <Left>17</Left>
+          <Top>2</Top>
+          <Width>1</Width>
+          <Height>7</Height>
+          <ScreenNumber>0</ScreenNumber>
+        </Light>
+      </Lights>
+    </BasicLightSetup>
   </ConfiguredLightSetupPlugins>
-  <ConfiguredPostProcessPlugins />
+  <ConfiguredPostProcessPlugins>
+    <ColourCorrectionPostProcess>
+      <Id>1</Id>
+      <Brightness>100</Brightness>
+      <RedSaturation>100</RedSaturation>
+      <GreenSaturation>100</GreenSaturation>
+      <BlueSaturation>100</BlueSaturation>
+      <Gamma>50</Gamma>
+    </ColourCorrectionPostProcess>
+  </ConfiguredPostProcessPlugins>
   <ConfiguredOutputPlugins>
     <ArduinoOutput>
       <Id>1</Id>
@@ -518,469 +562,53 @@
       <BaudRate>115200</BaudRate>
       <MagicWord>Glo</MagicWord>
     </ArduinoOutput>
-    <DebugOutput>
+    <MomoLightOutput>
       <Id>2</Id>
+      <Port>COM3</Port>
+      <BaudRate>9600</BaudRate>
+      <Firmware>1</Firmware>
+    </MomoLightOutput>
+    <DebugOutput>
+      <Id>3</Id>
     </DebugOutput>
   </ConfiguredOutputPlugins>
   <Profiles>
     <Profile>
       <Id>1</Id>
       <Name>Default Profile</Name>
-      <FrameRateLimiter>20</FrameRateLimiter>
+      <FrameRateLimiter>30</FrameRateLimiter>
       <LightSetupPlugins>
         <BasicLightSetup>
-          <Id>1</Id>
+          <Id>3</Id>
+          <DisplayName>MoMoLight (LTR) Wide</DisplayName>
           <NumberOfLightsHigh>10</NumberOfLightsHigh>
           <NumberOfLightsWide>18</NumberOfLightsWide>
           <Lights>
             <Light>
               <Id>1</Id>
               <Index>0</Index>
-              <Left>7</Left>
-              <Top>9</Top>
+              <Left>0</Left>
+              <Top>3</Top>
               <Width>1</Width>
-              <Height>1</Height>
+              <Height>8</Height>
               <ScreenNumber>0</ScreenNumber>
             </Light>
             <Light>
               <Id>2</Id>
               <Index>1</Index>
-              <Left>6</Left>
-              <Top>9</Top>
-              <Width>1</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Width>17</Width>
               <Height>1</Height>
               <ScreenNumber>0</ScreenNumber>
             </Light>
             <Light>
               <Id>3</Id>
               <Index>2</Index>
-              <Left>5</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>4</Id>
-              <Index>3</Index>
-              <Left>4</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>5</Id>
-              <Index>4</Index>
-              <Left>3</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>6</Id>
-              <Index>5</Index>
-              <Left>2</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>7</Id>
-              <Index>6</Index>
-              <Left>1</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>8</Id>
-              <Index>7</Index>
-              <Left>0</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>9</Id>
-              <Index>8</Index>
-              <Left>0</Left>
-              <Top>8</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>10</Id>
-              <Index>9</Index>
-              <Left>0</Left>
-              <Top>7</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>11</Id>
-              <Index>10</Index>
-              <Left>0</Left>
-              <Top>6</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>12</Id>
-              <Index>11</Index>
-              <Left>0</Left>
-              <Top>5</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>13</Id>
-              <Index>12</Index>
-              <Left>0</Left>
-              <Top>4</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>14</Id>
-              <Index>13</Index>
-              <Left>0</Left>
-              <Top>3</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>15</Id>
-              <Index>14</Index>
-              <Left>0</Left>
-              <Top>2</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>16</Id>
-              <Index>15</Index>
-              <Left>0</Left>
-              <Top>1</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>17</Id>
-              <Index>16</Index>
-              <Left>0</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>18</Id>
-              <Index>17</Index>
-              <Left>1</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>19</Id>
-              <Index>18</Index>
-              <Left>2</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>20</Id>
-              <Index>19</Index>
-              <Left>3</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>21</Id>
-              <Index>20</Index>
-              <Left>4</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>22</Id>
-              <Index>21</Index>
-              <Left>5</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>23</Id>
-              <Index>22</Index>
-              <Left>6</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>24</Id>
-              <Index>23</Index>
-              <Left>7</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>25</Id>
-              <Index>24</Index>
-              <Left>8</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>26</Id>
-              <Index>25</Index>
-              <Left>9</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>27</Id>
-              <Index>26</Index>
-              <Left>10</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>28</Id>
-              <Index>27</Index>
-              <Left>11</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>29</Id>
-              <Index>28</Index>
-              <Left>12</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>30</Id>
-              <Index>29</Index>
-              <Left>13</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>31</Id>
-              <Index>30</Index>
-              <Left>14</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>32</Id>
-              <Index>31</Index>
-              <Left>15</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>33</Id>
-              <Index>32</Index>
-              <Left>16</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>34</Id>
-              <Index>33</Index>
-              <Left>17</Left>
-              <Top>0</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>35</Id>
-              <Index>34</Index>
-              <Left>17</Left>
-              <Top>1</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>36</Id>
-              <Index>35</Index>
-              <Left>17</Left>
-              <Top>2</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>37</Id>
-              <Index>36</Index>
               <Left>17</Left>
               <Top>3</Top>
               <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>38</Id>
-              <Index>37</Index>
-              <Left>17</Left>
-              <Top>4</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>39</Id>
-              <Index>38</Index>
-              <Left>17</Left>
-              <Top>5</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>40</Id>
-              <Index>39</Index>
-              <Left>17</Left>
-              <Top>6</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>41</Id>
-              <Index>40</Index>
-              <Left>17</Left>
-              <Top>7</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>42</Id>
-              <Index>41</Index>
-              <Left>17</Left>
-              <Top>8</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>43</Id>
-              <Index>42</Index>
-              <Left>17</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>44</Id>
-              <Index>43</Index>
-              <Left>16</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>45</Id>
-              <Index>44</Index>
-              <Left>15</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>46</Id>
-              <Index>45</Index>
-              <Left>14</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>47</Id>
-              <Index>46</Index>
-              <Left>13</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>48</Id>
-              <Index>47</Index>
-              <Left>12</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>49</Id>
-              <Index>48</Index>
-              <Left>11</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
-              <ScreenNumber>0</ScreenNumber>
-            </Light>
-            <Light>
-              <Id>50</Id>
-              <Index>49</Index>
-              <Left>10</Left>
-              <Top>9</Top>
-              <Width>1</Width>
-              <Height>1</Height>
+              <Height>8</Height>
               <ScreenNumber>0</ScreenNumber>
             </Light>
           </Lights>
@@ -1004,14 +632,23 @@
           <PixelSkip>3</PixelSkip>
         </AverageColourExtraction>
       </ColourExtractionPlugins>
-      <PostProcessPlugins />
-      <OutputPlugins>
-        <ArduinoOutput>
+      <PostProcessPlugins>
+        <ColourCorrectionPostProcess>
           <Id>1</Id>
+          <Brightness>100</Brightness>
+          <RedSaturation>100</RedSaturation>
+          <GreenSaturation>100</GreenSaturation>
+          <BlueSaturation>100</BlueSaturation>
+          <Gamma>50</Gamma>
+        </ColourCorrectionPostProcess>
+      </PostProcessPlugins>
+      <OutputPlugins>
+        <MomoLightOutput>
+          <Id>2</Id>
           <Port>COM3</Port>
-          <BaudRate>115200</BaudRate>
-          <MagicWord>Glo</MagicWord>
-        </ArduinoOutput>
+          <BaudRate>9600</BaudRate>
+          <Firmware>1</Firmware>
+        </MomoLightOutput>
       </OutputPlugins>
     </Profile>
   </Profiles>

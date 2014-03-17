@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using Afterglow.Core;
@@ -71,6 +72,15 @@ namespace Afterglow.Web
 
             notifyThread.Start();
             // end: Tray Icon
+
+
+            // Debug
+#if DEBUG
+            Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
+            Debug.AutoFlush = true;
+#endif
+            //Debug.Indent();
+            //Debug.Unindent();
 
 
             _runtime = new AfterglowRuntime();
